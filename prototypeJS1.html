@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype JS 1</title>
+    <script>
+        function input() {
+            let iamt = parseInt(prompt("Input the amount (Won) of your deposit: "));
+            document.getElementById("t1").innerHTML = "Amount deposited: " + iamt + " won";
+            let mir = parseFloat(prompt("Input the monthly interest rate (%): "));
+            document.getElementById("t2").innerHTML = "Monthly interest rate: " + mir + "%";
+            let list = document.getElementById("t1a");
+            let bal = 0;
+            for (i=1; i<13; i++) {
+                bal += ((bal*(mir/100))+iamt);
+                let addli = document.createElement("li");
+                addli.innerHTML = "Monthly Balance: " + bal;
+                list.appendChild(addli);
+            };
+        }
+
+        /*
+        let init = 200000;
+        //let afm = (init*0.058);
+        let bal = 0;
+        function cal() {
+            for (i=1; i<13; i++) {
+                bal += ((bal*0.058)+init);
+                document.write(bal + '<br>');
+            }
+        }
+        //3334852 - 2400000 = 934852 (38.95%pa)
+        
+        200000
+        411600
+        635472.8
+        872330.2224000001
+        1122925.3752992002
+        1388055.0470665537
+        1668562.2397964138
+        1965338.8497046058
+        2279328.502987473
+        2611529.556160746
+        2962998.2704180693
+        3334852.1701023174
+        
+        function ap1() {
+            let yyy = 1;
+            let list = document.getElementById("t1a");
+            let add = document.createElement("li");
+            add.innerHTML = yyy;
+            list.appendChild(add);
+        }
+        
+        function ap2() {
+            let yyy = parseInt(prompt("Number?"));
+            let list = document.getElementById("t1a");
+            for (i=1; i<4; i++) {
+                yyy += ((yyy*2)+200000);
+                let add = document.createElement("li");
+                add.innerHTML = yyy;
+                list.appendChild(add);
+            }
+        }
+        */
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Balance calculation with compound monthly interest returns</h1>
+        <button onclick="input();">Input Amount & Interest Rate</button>
+        <!--
+        <button onclick="cal();">Calculate</button>
+        <button onclick="ap1();">Append 1</button>
+        <button onclick="ap2();">Append 2</button>
+        -->
+        <h2 id='t1'></h2>
+        <h2 id='t2'></h2>
+        <ol id="t1a"></ol>
+        <h2 id='t3'></h2>
+        <h2 id='t4'></h2>
+    </main>
+</body>
+</html>

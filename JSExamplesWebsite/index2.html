@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>JS Examples Part Two</title>
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript Examples Part Two</h1>
+            <h3>Delivery method: DOM Event - onclick + button</h3>
+            <hr>
+            <nav id="n1">
+                <ul id="n2">
+                    <li class="n3"><a href="index1.html">PART 1</a></li>
+                    <li class="n3"><a href="index2.html">PART 2</a></li>
+                    <li class="n3"><a href="index3.html">PART 3</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <nav class="n4a">
+            <h3 class="n4aa">Jump to:</h3>
+            <a href="index1.html#e1" class="n5">Example 1</a>
+            <a href="index1.html#e2" class="n5">Example 2</a>
+            <a href="index1.html#e3" class="n5">Example 3</a>
+            <a href="index1.html#e4" class="n5">Example 4</a>
+            <a href="index1.html#e5" class="n5">Example 5</a>
+            <a href="index1.html#e6" class="n5">Example 6</a>
+            <a href="index1.html#e7" class="n5">Example 7</a>
+            <a href="index1.html#e8" class="n5">Example 8</a>
+            <a href="index1.html#e9" class="n5">Example 9</a>
+            <a href="index1.html#e10" class="n5">Example 10</a>
+            <a href="index1.html#e11" class="n5">Example 11</a>
+            <a href="index1.html#e12" class="n5">Example 12</a>
+            <a href="index1.html#e13" class="n5">Example 13</a>
+            <a href="index1.html#e14" class="n5">Example 14</a>
+            <a href="index1.html#e15" class="n5">Example 15</a>
+            <a href="index1.html#e16" class="n5">Example 16</a>
+            <a href="index1.html#e17" class="n5">Example 17</a>
+            <a href="index1.html#e18" class="n5">Example 18</a>
+            <a href="index1.html#e19" class="n5">Example 19</a>
+            <a href="index1.html#e20" class="n5">Example 20</a>
+            <a href="index2.html#e21" class="n5">Example 21</a>
+            <a href="index2.html#e22" class="n5">Example 22</a>
+            <a href="index2.html#e23" class="n5">Example 23</a>
+            <a href="index2.html#e24" class="n5">Example 24</a>
+        </nav>
+        <nav class="n4b">
+            <h3 class="n4bb">Jump to:</h3>
+            <a href="index2.html#e25" class="n5">Example 25</a>
+            <a href="index2.html#e26" class="n5">Example 26</a>
+            <a href="index2.html#e27" class="n5">Example 27</a>
+            <a href="index2.html#e28" class="n5">Example 28</a>
+            <a href="index2.html#e29" class="n5">Example 29</a>
+            <a href="index2.html#e30" class="n5">Example 30</a>
+            <a href="index2.html#e31" class="n5">Example 31</a>
+            <a href="index2.html#e32" class="n5">Example 32</a>
+            <a href="index2.html#e33" class="n5">Example 33</a>
+            <a href="index2.html#e34" class="n5">Example 34</a>
+            <a href="index2.html#e35" class="n5">Example 35</a>
+            <a href="index2.html#e36" class="n5">Example 36</a>
+            <a href="index2.html#e37" class="n5">Example 37</a>
+            <a href="index2.html#e38" class="n5">Example 38</a>
+            <a href="index2.html#e39" class="n5">Example 39</a>
+            <a href="index2.html#e40" class="n5">Example 40</a>
+            <a href="index3.html#e41" class="n5">Example 41</a>
+            <a href="index3.html#e42" class="n5">Example 42</a>
+            <a href="index3.html#e43" class="n5">Example 43</a>
+            <a href="index3.html#e44" class="n5">Example 44</a>
+            <a href="index3.html#e45" class="n5">Example 45</a>
+            <a href="index3.html#e46" class="n5">Example 46</a>
+            <a href="index3.html#e47" class="n5">Example 47</a>
+            <a href="index3.html#e48" class="n5">Example 48</a>
+        </nav>
+        <main>
+            <div id="e21">
+                <h2>21) Conditional - if, else if and else statements + prompt()</h2>
+                <p>Please enter either '1' or '2' upon clicking the button below.</p>
+                <h3 id="demo27" style="color:blueviolet;"></h3>            
+                <button type="button" onclick='f09()'> Example 21 </button>
+                <script>
+                    function f09() {
+                        let a = prompt ("Please enter either '1' or '2':");
+                        if (a == 1) {
+                            document.getElementById("demo27").innerHTML = a + " is an odd number.";
+                        } else if (a == 2) {
+                            document.getElementById("demo27").innerHTML = a + " is an even number.";
+                        } else {
+                            document.getElementById("demo27").innerHTML = "Error! Try again.";
+                        }
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e22">
+                <h2>22) Complex Conditional + Logical Operators </h2>
+                <p>Flight tickets availability search to Honolulu in May.</p>
+                <p>For demonstration purpose, tickets are only available on the following:</p>
+                <ul>
+                    <li>From 1st to 6th May; First class; Both AM and PM flights</li>
+                    <li>From 23rd to 29th May; Economy class; PM flights</li>
+                </ul>
+                <button type="button" onclick='f10()'> Example 22 </button>
+                <h3 id="demo28" style="color:blueviolet;"></h3> 
+                <script>
+                    function f10() {
+                        let a = prompt ("Departure date. Please enter a number from '1' to '31':");
+                        let b = prompt ("Seat Class. Please enter 'e' for economy or 'f' for first class:");
+                        let c = prompt ("Departure time. Please enter 'am' for morning flight or 'pm' for afternoon flight:");
+                        if (a <= 6 && b == "f" && (c == "am" || c == "pm")) {
+                            document.getElementById("demo28").innerHTML = "Seats are available. Estimated Price: 4,000,000 KRW";
+                        } else if ((a >= 23 && a <= 29) && b == "e" && c == "pm") {
+                            document.getElementById("demo28").innerHTML = "Limited seats left. Estimated Price: 3,000,000 KRW";
+                        } else {
+                            document.getElementById("demo28").innerHTML = "Sorry. No flights available";
+                        }
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e23">
+                <h2>23) while Loop </h2>
+                <p>Count to five and see a picture below:</p>
+                <button type="button" onclick='f11()'> Example 23 </button>
+                <h3 id="demo29" style="color:blueviolet;"></h3>
+                <img id="demo30" src="">
+                <script>
+                    function f11() {
+                        let display = "";
+                        let a = 1;
+                        while (a <= 5) {
+                            display += "<br>" + a;
+                            a++;
+                        }
+                        document.getElementById("demo29").innerHTML = display;
+                        document.getElementById("demo30").src="images/image007.png"; 
+                        document.getElementById("demo30").style="width: 160px; height: 120px;";
+                    }
+                </script>
+            </div>
+            <hr>
+            
+            <div id="e24">
+                <h2>24) Combining while Loop + for loop </h2>
+                <p>Count to three (under while loop) and then count to nine (under for loop)</p>
+                <button type="button" onclick='f12()'> Example 24 </button>
+                <h3 id="demo31" style="color:blueviolet;"></h3>
+                <h3 id="demo32" style="color:blue;"></h3>
+                <script>
+                    function f12() {
+                        let display1 = "";
+                        let a = 1;
+                        while (a <= 3) {
+                            display1 += "<br>" + a + " - while loop";
+                            a++;
+                        }
+                        document.getElementById("demo31").innerHTML = display1;
+    
+                        let display2 = "";
+                        for (a = 4; a <= 9; a++) {
+                            display2 += "<br>" + a + " - for loop";
+                        }
+                        document.getElementById("demo32").innerHTML = display2;
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e25">
+                <h2>25a) Three sepearated radio executions vs addEventListener</h2>
+                <p><b>Prof Kushal asked: 'Would you like to check your grades at the end of the semester?'</b></p>
+                <p>Your reply:</p>
+                <input id="demo33" type="radio" name="q1" onclick="document.getElementById('demo36').innerHTML = demo33.value;" value="Please make sure to complete the Course Evaluation Survey. Thank you.">
+                <label>Yes, please.</label><br>
+                <input id="demo34" type="radio" name="q1" onclick="document.getElementById('demo36').innerHTML = demo34.value;" value="Please sit back and relax.">
+                <label>NO!</label><br>
+                <input id="demo35" type="radio" name="q1" onclick="document.getElementById('demo36').innerHTML = demo35.value;" value="Please visit the 5th floor office for further consultation.">
+                <label>I do not understand English language.</label><br>
+                <h3 id="demo36" style="color: darkred;"></h3>
+            </div>
+            <hr>
+    
+            <div>
+                <h2>25b) Three sepearated radio executions vs addEventListener</h2>
+                <p><b>Prof Kushal asked: 'Would you like to check your grades at the end of the semester?'</b></p>
+                <p>Your reply:</p>
+                <input id="demo37" type="radio" name="q2"><label>Oh yeah!</label><br>
+                <input id="demo38" type="radio" name="q2"><label>Nah, can't be bothered.</label><br>
+                <input id="demo39" type="radio" name="q2"><label>Huh? Wot?</label><br>
+                <h3 id="demo40" style="color:deepskyblue;"></h3>
+                <script>
+                    demo37.addEventListener("click", function(){document.getElementById("demo40").innerHTML = "Do that course evaluation for me, willya?"});
+                    demo38.addEventListener("click", function(){document.getElementById("demo40").innerHTML = "Time to chillax~"});                
+                    demo39.addEventListener("click", function(){document.getElementById("demo40").innerHTML = "Say hello to the 'F' grade :)"});
+                    //Learn more about addEventListener in Module 3.
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e26">
+                <h2>26) ARRAY - A variable type to contain a collection of values</h2>
+                <p>For example, an array of five car brand names to be stored as values in an array. (No. of elements = 5; [0][1][2][3][4])</p>
+                <p>Click the button below to show all the elements in the array:</p>
+                <h3 id="demo41" style="color:blueviolet;"></h3>
+                <button type="button" onclick='document.getElementById("demo41").innerHTML = carBrands;'> Example 26a </button>
+                <p>Click the button below to show the 3rd element in the array:</p>
+                <h3 id="demo42" style="color:cornflowerblue"></h3>
+                <button type="button" onclick='document.getElementById("demo42").innerHTML = carBrands[2];'> Example 26b </button>
+                <script>
+                    const carBrands = ["KIA", "Toyota", "Hyundai", "BMW", "Chevrolet"];
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e27">
+                <h2>27) ARRAY + Loop - Total sum of all the values</h2>
+                <p>Example: [27, 304, 1276, 7, 443, 35.74, 67.07, 432.4]</p>
+                <p>Click the button below to calculate the total value of all the elements in the array:</p>
+                <h3 id="demo43" style="color:blueviolet;"></h3>
+                <button type="button" onclick='f13()'> Example 27 </button>
+                <script>
+                    const a = [27, 304, 1276, 7, 443, 35.74, 67.07, 432.4];
+                    function f13() {
+                        var value = 0;
+                        for (index = 0; index < a.length; index++) {
+                            value += a[index];
+                        }
+                        document.getElementById("demo43").innerHTML = value;
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e28">
+                <h2>28) Adding array elements via prompt() + push() methods (No Loop)</h2>
+                <p>Click the button below to input three number values into an array:</p>
+                <h3 id="demo44" style="color:darkslateblue;"></h3>
+                <button type="button" onclick='f14()'> Example 28 </button>
+                <script>
+                    function f14() {
+                        let a = prompt("Please enter the 1st number:");
+                        let b = prompt("Please enter the 2nd number:");
+                        let c = prompt("Please enter the 3rd number:");
+                        const arrayA = [];
+                        arrayA.push(a);     //arrayA[arrayA.length] = a; (the length method - same result)
+                        arrayA.push(b);
+                        arrayA.push(c);
+                        document.getElementById("demo44").innerHTML = arrayA;
+                        // three pushes are fixed; Does not work if input is less than 3 times.
+                    }
+                </script>
+                <p>*Note: The pop() method can be used to remove the last element from an array.</p>
+            </div>
+            <hr>
+    
+            <div id="e29">
+                <h2>29a) Adding array elements via prompt() + push() methods (Loop)</h2>
+                <p>Click the button below to input four number values into an array:</p>
+                <h3 id="demo45" style="color:darkslateblue;"></h3>
+                <button type="button" onclick='f15()'> Example 29a </button>
+    
+                <h2>29b) Total sum of all the array values with parseInt() property</h2>
+                <p>Click the button below to calculate the total value of all the elements in the array:</p>
+                <h3 id="demo46" style="color:darkslateblue;"></h3>
+                <button type="button" onclick='f16()'> Example 29b </button>
+                <script>
+                    const arrayA = [];
+                    function f15() {
+                        for (n = 1; n <= 4; n++) {
+                            let a = prompt("Please enter a number:");
+                            arrayA.push(a);
+                        }
+                        document.getElementById("demo45").innerHTML = arrayA;
+                    }
+    
+                    function f16() {
+                        var value = 0;
+                        for (index = 0; index < arrayA.length; index++) {
+                            value += parseInt(arrayA[index]);
+                        }
+                        document.getElementById("demo46").innerHTML = value;
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e30">
+                <h2>30) checkbox total sum value - version 1</h2>
+                <p>Place your orders:</p>
+                <input type="checkbox" value="2000" onclick="add(this)"><label>Item A - 2,000 Won</label><br>
+                <input type="checkbox" value="4000" onclick="add(this)"><label>Item B - 4,000 Won</label><br>
+                <input type="checkbox" value="6000" onclick="add(this)"><label>Item C - 6,000 Won</label><br>
+                <input type="checkbox" value="8000" onclick="add(this)"><label>Item D - 8,000 Won</label><br>
+                <input type="checkbox" value="10000" onclick="add(this)"><label>Item E - 10,000 Won</label><br>
+                <input type="checkbox" value="12000" onclick="add(this)"><label>Item F - 12,000 Won</label><br>
+                <h3>Total Price: <span id="demo47" style="color:darkred"></span></h3>
+                
+                <script>
+                    var sum = 0;
+                    function add(item) {
+                        if(item.checked){
+                            sum += parseInt(item.value);
+                        } else {
+                            sum -= parseInt(item.value);
+                        }
+                        document.getElementById('demo47').innerHTML = sum;
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e31">
+                <h2>31) checkbox total sum value - version 2</h2>
+                <input type="checkbox" value="35" onclick="f17(this)"><label>35</label><br>
+                <input type="checkbox" value="78" onclick="f17(this)"><label>78</label><br>
+                <input type="checkbox" value="596" onclick="f17(this)"><label>596</label><br>
+                <input type="checkbox" value="224" onclick="f17(this)"><label>224</label><br>
+                <input type="checkbox" value="1795" onclick="f17(this)"><label>1795</label><br>
+                <input type="checkbox" value="3739" onclick="f17(this)"><label>3739</label><br>
+                <h3>Array elements: <span id="demo48" style="color:darkcyan;"></span></h3>
+                <p>Click the button below to calculate the total value of all the elements in the array:</p>
+                <button type="button" onclick='f18()'> Example 31 </button>
+                <h3>Total value: <span id="demo49" style="color:darkcyan;"></span></h3>
+            
+                <script>
+                    const arrayB = [];
+                    function f17(item) {
+                        if(item.checked){
+                            arrayB.push(item.value);
+                        } else {
+                            arrayB.pop(item.value); //pop() method to remove the last element from an array.
+                        }
+                        document.getElementById("demo48").innerHTML = arrayB;
+                    }
+                    
+                    function f18() {
+                        var sum = 0;
+                        for (index = 0; index < arrayB.length; index++) {
+                            sum += parseInt(arrayB[index]);
+                        }
+                        document.getElementById("demo49").innerHTML = sum;
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e32">
+                <h2>32a) Function - a block of code designed to perform a particular task</h2>
+                <p>Syntax: function name(parameters) {
+                    //code
+                    //return
+                    }
+                </p>
+                <p>Invoke(call) a Function example. (Result: True or False) [Version One]</p>
+                <h3>Press the button to confirm login:</h3>
+                <button type="button" onclick='f19()'> Example 32a </button>
+                <h3 id="demo50" style="color:darkslateblue;"></h3>
+                
+                <script>
+                    function f19() {
+                        var confirm1 = login();
+                        function login() {
+                            if (confirm("Login?")) {
+                                return true;
+                            } else {
+                                return false
+                            }
+                        }
+                        document.getElementById("demo50").innerHTML = confirm1;
+                    }
+                </script>
+                <p>*Note: A function nested inside a function (see code)</p>
+            </div>
+            <br>
+            <div>
+                <h2>32b) Function - a block of code designed to perform a particular task</h2>
+                <p>Invoke(call) a Function example. (Result: True or False) [Version Two]</p>
+                <h3>Press the button to confirm login:</h3>
+                <button type="button" onclick='f20()'> Example 32b </button>
+                <h3 id="demo51" style="color:darkslateblue;"></h3>
+                
+                <script>
+                    function f20() {
+                        if (confirm("Login?")) {
+                            return document.getElementById("demo51").innerHTML = true;
+                        } else {
+                            return document.getElementById("demo51").innerHTML = false;
+                        }
+                    }
+                </script>
+                <p>*Note: No function nested inside a function (see code)</p>
+            </div>
+            <hr>
+    
+            <div id="e33">
+                <h2>33) DOM - Methods of accessing elements</h2>
+                <h4>*Note: A NodeList object is a list (collection) of nodes extracted from a document. NodeList items can only be accessed by their index number.</h4>
+                <h4>*Note: Methods such as getElementsByClassName and querySelectorAll, extract nodes.</h4>
+                <p class="cA" id="demo52">This is class A student 52.</p>
+                <p class="cB" id="demo53">This is class B student 53.</p>
+                <p class="cB" id="demo54">This is class B student 54.</p>
+                <p class="cB" id="demo55">This is class B student 55.</p>
+                <p class="cA" id="demo56">This is class A student 56.</p>
+                <p class="cB" id="demo57">This is class B student 57.</p>
+    
+                <h3>Click to 'red' & increase the font size of the student 53 of class B (document.getElementById):</h3>
+                <button type="button" onclick='document.getElementById("demo53").style = "color:red; font-size:60px;"'> Example 33a </button>
+    
+                <h3>Click to 'blue' the student 55 of class B (document.querySelector):</h3>
+                <button type="button" onclick='document.querySelector("#demo55").style = "color:blue";'> Example 33b </button>
+                <button type="button" onclick='puppy()'> Example 33bi </button>
+    
+                <h3>How many students are there in class A? (document.getElementsByClassName):</h3>
+                <button type="button" onclick='f21()'> Example 33c </button>
+                <h3 id="demo58" style="color:brown;"></h3>
+    
+                <h3>Click to highlight the 4th student of class B (document.getElementsByClassName + Index):</h3>
+                <button type="button" onclick='document.getElementsByClassName("cB")[3].style = "background-color:yellow";'> Example 33d </button>
+    
+                <h3>How many students are there in class B? (document.querySelectorAll):</h3>
+                <button type="button" onclick='f22()'> Example 33e </button>
+                <h3 id="demo59" style="color:darkblue;"></h3>
+    
+                <h3>Click to highlight the 2nd student of class B & the 1st student of class A (document.querySelectorAll + Index):</h3>
+                <button type="button" onclick='f22a()'> Example 33f </button>
+                
+                <script>
+                    function puppy() {
+                        document.querySelector(".cB").style.color = "orange";       //querySelector does not accept [0]
+                        //document.querySelectorAll(".cB")[0].style.color = "orange";     //querySelectorAll accepts [0]
+                        document.querySelectorAll(".cB")[1].style.color = "orange";
+                        document.querySelectorAll(".cB")[2].style.color = "orange";
+                    }
+    
+                    function f21() {
+                        var nodelist01 = document.getElementsByClassName('cA');
+                        document.getElementById("demo58").innerHTML = nodelist01.length;
+                    }
+    
+                    function f22() {
+                        var nodelist02 = document.querySelectorAll('.cB');
+                        document.getElementById("demo59").innerHTML = nodelist02.length;
+                    }
+    
+                    function f22a() {
+                        document.querySelectorAll(".cB")[1].style = "background-color:pink";
+                        document.querySelectorAll(".cA")[0].style = "background-color:pink";
+                    }               
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e34">
+                <h2>34) Obtaining values from SELECT & OPTION</h2>
+                <h3>Select an item to purchase:</h3>
+                <select onchange="f23()" id="demo60">
+                    <option selected>Choose below</option>
+                    <option value="2200">참치김밥 (2200원)</option>
+                    <option value="5000">담배 (5000원)</option>
+                    <option value="2000">테라 맥주 500ML (2000원)</option>
+                    <option value="3000">처음처럼 소주 (3000원)</option>
+                </select>
+                <h3 id="demo61" style="color:darkslateblue;"></h3>
+                
+                <script>
+                    function f23() {
+                        var price1 = document.getElementById("demo60").value;
+                        document.getElementById("demo61").innerHTML = price1 + "원입니다.";
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e35">
+                <h2>35) DOM - Accessing the children of an element</h2>
+                <h3>My Shopping list:</h3>
+                <ol id="demo62">
+                    <li>참치김밥 (2200원)</li>
+                    <li>담배 (5000원)</li>
+                    <li>테라 맥주 500ML (2000원)</li>
+                    <li>처음처럼 소주 (3000원)</li>
+                </ol>
+                
+                <h4>No. of items in my shopping list:</h4>
+                <h3 id="demo63" style="color:darkslateblue;"></h3>
+                <button type="button" onclick='f24()'> Example 35a </button>
+    
+                <h4>Click below to highlight the important items to buy (use of indexes):</h4>
+                <button type="button" onclick='f25()'> Example 35b </button>
+                            
+                <script>
+                    function f24() {
+                        let count1 = document.getElementById("demo62").children.length;
+                        document.getElementById("demo63").innerHTML = count1;
+                    }
+    
+                    function f25() {
+                        const items1 = document.getElementById("demo62").children;
+                        items1[1].style.backgroundColor = "pink";
+                        items1[3].style.backgroundColor = "pink";
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e36">
+                <h2>36) createElement() + appendChild() + removeChild()</h2>
+                <h3>Click the buttons below to create a new listed item (add items A-C):</h3>
+                <button type="button" onclick="f26()"> Item A </button>
+                <button type="button" onclick="f27()"> Item B </button>
+                <button type="button" onclick="f28()"> Item C </button>
+                <ul id="demo64"></ul>
+                <h3>Click the button below to delete the last child element:</h3>
+                <button type="button" onclick='f29()'> Remove item </button>
+    
+                <p>*Note: there are several ways to selectively target which child to remove such as the first one, etc.</p>
+    
+                <script>
+                    const ulist = document.getElementById("demo64");
+    
+                    function f26() {
+                        var itemA = document.createElement("li");
+                        itemA.innerHTML = "Item A";
+                        ulist.appendChild(itemA);
+                    }
+    
+                    function f27() {
+                        var itemB = document.createElement("li");
+                        itemB.innerHTML = "Item B";
+                        ulist.appendChild(itemB);
+                    }
+    
+                    function f28() {
+                        var itemC = document.createElement("li");
+                        itemC.innerHTML = "Item C";
+                        ulist.appendChild(itemC);
+                    }
+    
+                    function f29() {
+                        ulist.removeChild(ulist.lastElementChild);
+    
+                        //Alternative method to remove the first child:
+                        //var ulist1 = ulist.children;
+                        //var del = ulist.removeChild(ulist1[0]);
+                        //del.innerHTML;
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="demo65">
+                <h2 id="e37">37) createElement() with images</h2>
+                <h3>Click the button below to create a new image:</h3>
+                <button type="button" onclick='f30()'> Example 37 </button>
+    
+                <script>
+                    /*
+                    var div1 = document.getElementById("demo65");
+                    function f30() {
+                        let a11 = document.createElement("h1");
+                        a11.innerHTML = "Class 2";
+                        div1.appendChild(a11);
+                    }
+                    */
+    
+                    var div1 = document.getElementById("demo65");
+                    function f30() {
+                        let newpic1 = document.createElement("img");
+                        newpic1.src = "images/Image008.png";
+                        div1.appendChild(newpic1);
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e38">
+                <h2>38) Big Combo: createElement() + appendChild() + removeChild() + array push() & pop() + array sum</h2>
+                <h3>Select your shopping items A-D:</h3>
+                <button type="button" onclick="f31()"> Item A </button>
+                <button type="button" onclick="f32()"> Item B </button>
+                <button type="button" onclick="f33()"> Item C </button>
+                <button type="button" onclick="f34()"> Item D </button>
+                <ul id="demo66"></ul>
+                <h3>Click the button below to remove the last item from the shopping list:</h3>
+                <button type="button" onclick='f35()'> Remove item </button>
+    
+                <h3>Total Price:</h3>
+                <h3 id="demo67" style="color:darkslateblue;"></h3>
+                <button type="button" onclick='f36()'> 바로구매 </button>
+    
+                <script>
+                    const shoplist1 = document.getElementById("demo66");
+                    const arrayC = [];
+    
+                    function f31() {
+                        var itemA = document.createElement("li");
+                        itemA.innerHTML = "Item A - 200 won";
+                        shoplist1.appendChild(itemA);
+                        let ia = 200;
+                        arrayC.push(ia);
+                    }
+    
+                    function f32() {
+                        var itemB = document.createElement("li");
+                        itemB.innerHTML = "Item B - 400 won";
+                        shoplist1.appendChild(itemB);
+                        let ib = 400;
+                        arrayC.push(ib);
+                    }
+    
+                    function f33() {
+                        var itemC = document.createElement("li");
+                        itemC.innerHTML = "Item C - 600 won";
+                        shoplist1.appendChild(itemC);
+                        let ic = 600;
+                        arrayC.push(ic);
+                    }
+    
+                    function f34() {
+                        var itemD = document.createElement("li");
+                        itemD.innerHTML = "Item D - 800 won";
+                        shoplist1.appendChild(itemD);
+                        let id = 800;
+                        arrayC.push(id);
+                    }
+    
+                    function f35() {
+                        shoplist1.removeChild(shoplist1.lastElementChild);
+                        arrayC.pop();
+                    }
+    
+                    function f36() {
+                        //document.getElementById("demo222").innerHTML = arrayC;
+                        var tvalue = 0;
+                        for (index = 0; index < arrayC.length; index++) {
+                            tvalue += parseInt(arrayC[index]);
+                        }
+                        document.getElementById("demo67").innerHTML = tvalue;
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e39">
+                <h2>39) Same as example 38 but with images</h2>
+                <section class="demo68">
+                    <img src="images/Image007.png" class="demo69">
+                    <p class="demo70">200원</p>
+                    <button type="button" onclick="f37()"> 장바구니 담기 </button>
+                </section>
+                <section class="demo68">
+                    <img src="images/Image008.png" class="demo69">
+                    <p class="demo70">400원</p>
+                    <button type="button" onclick="f38()"> 장바구니 담기 </button>
+                </section>
+                <section class="demo68">
+                    <img src="images/Image009.png" class="demo69">
+                    <p class="demo70">600원</p>
+                    <button type="button" onclick="f39()"> 장바구니 담기 </button>
+                </section>
+                <section class="demo68">
+                    <img src="images/Image010.png" class="demo69">
+                    <p class="demo70">800원</p>
+                    <button type="button" onclick="f40()"> 장바구니 담기 </button>
+                </section>
+    
+                <h3>장바구니</h3>
+                <ul id="demo71"></ul>
+                <button type="button" onclick='f41()'> Remove last item </button>
+    
+                <h3>주문금액: <span id="demo72"></span>원</h3>
+                <button type="button" onclick='f42()'> 결제하기 </button>
+    
+                <style>
+                    .demo68 {
+                        display: inline-block;
+                        position: relative;
+                        text-align: center;
+                        width: 170px;
+                        height: 180px;
+                        border: 1px solid black;
+                        padding: 0.5%;
+                        margin-left: 1%;
+                        margin-right: 1%;
+                    }
+                    .demo68:hover {
+                        box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.5);
+                    }
+                    .demo69 {
+                        width: 160px;
+                        height: 120px;
+                        display: relative;
+                        border: 1px solid black;
+                    }
+                    .demo70 {
+                        font-weight: 700;
+                        margin-top: 0;
+                        margin-bottom: 4px;
+                    }
+                    #demo72 {
+                        color: darkmagenta;
+                        font-size: 25px;
+                    }
+                </style>
+    
+                <script>
+                    const shoplist2 = document.getElementById("demo71");
+                    const arrayD = [];
+    
+                    function f37() {
+                        var itemA = document.createElement("li");
+                        itemA.innerHTML = "Image006 - 200 won";
+                        shoplist2.appendChild(itemA);
+                        let ia = 200;
+                        arrayD.push(ia);
+                    }
+    
+                    function f38() {
+                        var itemB = document.createElement("li");
+                        itemB.innerHTML = "Image007 - 400 won";
+                        shoplist2.appendChild(itemB);
+                        let ib = 400;
+                        arrayD.push(ib);
+                    }
+    
+                    function f39() {
+                        var itemC = document.createElement("li");
+                        itemC.innerHTML = "Image008 - 600 won";
+                        shoplist2.appendChild(itemC);
+                        let ic = 600;
+                        arrayD.push(ic);
+                    }
+    
+                    function f40() {
+                        var itemD = document.createElement("li");
+                        itemD.innerHTML = "Image009 - 800 won";
+                        shoplist2.appendChild(itemD);
+                        let id = 800;
+                        arrayD.push(id);
+                    }
+    
+                    function f41() {
+                        shoplist2.removeChild(shoplist2.lastElementChild);
+                        arrayD.pop();
+                    }
+    
+                    function f42() {
+                        var tvalue = 0;
+                        for (index = 0; index < arrayD.length; index++) {
+                            tvalue += parseInt(arrayD[index]);
+                        }
+                        document.getElementById("demo72").innerHTML = tvalue;
+                    }
+                </script>
+            </div>
+            <hr>
+    
+            <div id="e40">
+                <h2>40a) Moving elements: insertBefore() + .firstElementChild / .lastElementChild</h2>
+                <p>Syntax: element.insertBefore(newChild, existingChild);</p>
+                <section class="demo73">
+                    <p class="demo74">Sorting Area</p>
+                    <ul id="list0">
+                        <li>chicken soup</li>
+                        <li>yoga</li>
+                        <li>rectangle</li>
+                        <li>pizza</li>
+                        <li>hiking</li>
+                        <li>deep fried Mars bar</li>
+                        <li>jigsaw puzzle</li>
+                        <li>octagon</li>
+                        <li>noodles</li>
+                        <li>dodecagon</li>
+                    </ul>
+                </section>
+                <section class="demo73">
+                    <p class="demo74">SHAPES</p>
+                    <ul class="demo75" id="list1"></ul>
+                </section>
+                <section class="demo73">
+                    <p class="demo74">HOBBIES</p>
+                    <ul class="demo75" id="list2"></ul>
+                </section>
+                <section class="demo73">
+                    <p class="demo74">FOOD</p>
+                    <ul class="demo75" id="list3"></ul>
+                </section>
+                <br>
+                <p>Sort the items in the above list into its respective catogory:</p>
+                <button type="button" onclick='f43()'> SHAPES </button>
+                <button type="button" onclick='f43a()'> Return item to Sorting Area </button><br><br>
+                <button type="button" onclick='f44()'> HOBBIES </button>
+                <button type="button" onclick='f44a()'> Return item to Sorting Area </button><br><br>
+                <button type="button" onclick='f45()'> FOOD </button>
+                <button type="button" onclick='f45a()'> Return item to Sorting Area </button><br>         
+    
+                <style>
+                    .demo73 {
+                        display: inline-block;
+                        position: relative;
+                        width: 160px;
+                        height: fit-content;
+                        border: 1px solid black;
+                        margin-left: 2px;
+                        margin-right: 2px;
+                    }
+                    .demo74 {
+                        text-align: center;
+                        font-weight: 700;
+                        text-decoration: underline;
+                        margin-top: 4px;
+                        margin-bottom: 0px;
+                    }
+                    .demo75 {
+                        list-style-type: circle;
+                        margin-top: 4px;
+                    }
+                    #list0 {
+                        text-align: left;
+                        margin-top: 4px;
+                    }
+                    button:hover {
+                        box-shadow: 0 0 1px 1px rgba(128, 128, 128, 0.5);
+                    }
+                </style>
+    
+                <script>                
+                    function f43() {
+                        const a = document.getElementById("list0").firstElementChild;
+                        const b = document.getElementById("list1");
+                        list1.insertBefore(a, null);
+                    }
+                    // null = to insert the child at the end of the list
+                    // list1.insertBefore(a, b.children[0]); --> to insert the child at the start of the list
+                    function f43a() {
+                        const a = document.getElementById("list1").lastElementChild;
+                        const b = document.getElementById("list0");
+                        list0.insertBefore(a, b.children[0]);
+                    }
+                    function f44() {
+                        const a = document.getElementById("list0").firstElementChild;
+                        const b = document.getElementById("list2");
+                        list2.insertBefore(a, null);
+                    }
+                    function f44a() {
+                        const a = document.getElementById("list2").lastElementChild;
+                        const b = document.getElementById("list0");
+                        list0.insertBefore(a, b.children[0]);
+                    }
+                    function f45() {
+                        const a = document.getElementById("list0").firstElementChild;
+                        const b = document.getElementById("list3");
+                        list3.insertBefore(a, null);
+                    }
+                    function f45a() {
+                        const a = document.getElementById("list3").lastElementChild;
+                        const b = document.getElementById("list0");
+                        list0.insertBefore(a, b.children[0]);
+                    }
+                </script>
+                <br>
+                <h2>40b) Moving elements: appendChild() + .firstElementChild / .lastElementChild</h2>
+                <p>Same effects with the appendChild method:</p>
+                <button type="button" onclick='f46()'> SHAPES </button>
+                <button type="button" onclick='f47()'> HOBBIES </button>
+                <button type="button" onclick='f48()'> FOOD </button>         
+    
+                <script>
+                    function f46() {
+                        const a = document.getElementById("list0").firstElementChild;
+                        const b = document.getElementById("list1");
+                        list1.appendChild(a, b.children);
+                    }
+                    function f47() {
+                        const a = document.getElementById("list0").firstElementChild;
+                        const b = document.getElementById("list2");
+                        list2.appendChild(a, b.children);
+                    }
+                    function f48() {
+                        const a = document.getElementById("list0").firstElementChild;
+                        const b = document.getElementById("list3");
+                        list3.appendChild(a, b.children);
+                    }
+                </script>
+            </div>
+        </main>
+    </body>
+</html>
+
+<!-- REFERENCES: it works!
+    <button type="button" onclick=''> 장바구니 </button>
+
+    <script>
+        //(4 combined methods: .value + checked + querySelector + parseInt)
+        //const arrayA1 = [];
+        //let a = parseInt(document.querySelector('#demo47:checked').value);
+        //let b = parseInt(document.querySelector('#demo48:checked').value);
+        //let c = parseInt(document.querySelector('#demo49:checked').value);
+        //arrayA1.push(a);
+        //arrayA1.push(b);
+        //arrayA1.push(c);
+        //document.getElementById("demo101").innerHTML = arrayA1;
+
+        //let a = parseInt(document.getElementById("demo33").value);
+        //let b = parseInt(document.getElementById("demo34").value);
+        //let c = parseInt(document.getElementById("demo35").value);
+        //var sum = a + b + c;
+        //document.getElementById("demo101").innerHTML = sum;
+
+        var a = document.querySelectorAll('.demo33:checked').value;
+        
+    </script>
+
+-->

@@ -1,0 +1,89 @@
+body {
+    margin-left: 20%;
+    margin-right: 10%;
+    font-family: system-ui;
+}
+header {
+    text-align: center;
+    text-decoration: none
+}
+
+#n1 {text-align: left;}
+
+#n2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.n3 {
+    float: left;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.n3 a {
+    display:grid;
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.n3 a:hover {color: darkgray;}
+.n3 a:visited {text-decoration: none;}
+.n3 a:link {text-decoration: none;}
+
+button {padding: 3px; box-shadow: 0 0 1px 1px rgba(128, 128, 128, 0.5);}
+button:hover {background-color: darkgray;}
+
+.n4a {
+    height:fit-content;
+    position: fixed;
+    top: 10px;
+    left: 6px;
+    text-align: left;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
+    font-size: auto;
+}
+.n4aa {
+    margin: 0;
+    margin-bottom: 4px; 
+    text-decoration: underline;
+}
+
+.n4b {
+    height:fit-content;
+    position: fixed;
+    top: 10px;
+    left: 100px;
+    text-align: left;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
+    font-size: auto;
+}
+.n4bb {
+    margin: 0;
+    margin-bottom: 4px; 
+    text-decoration: underline;
+    color: white;
+}
+
+.n5 {color: black;
+    text-decoration: none;
+}
+.n5:link {text-decoration: none;}
+.n5:visited {text-decoration: none;}
+.n5:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: none;
+}
